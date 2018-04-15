@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="554.0" prefWidth="674.0" style="-fx-background-color: F6C88D;" stylesheets="@darktheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salesline.AddNewAppointmentController">
+  <children>
+ 
+ 
+            <ChoiceBox fx:id="choicebox_Name" layoutX="148.0" layoutY="54.0" prefHeight="31.0" prefWidth="419.0" />
+            <TextField fx:id="amount_box" layoutX="148.0" layoutY="94.0" prefHeight="37.0" prefWidth="177.0" />
+            <TextField fx:id="date_time_box" disable="true" editable="false" layoutX="409.0" layoutY="94.0" prefHeight="37.0" prefWidth="159.0" />
+      <ChoiceBox fx:id="choicebox_customer" layoutX="149.0" layoutY="143.0" prefHeight="31.0" prefWidth="419.0" />
+            <TextField fx:id="invoiceNo_box" layoutX="149.0" layoutY="186.0" prefHeight="37.0" prefWidth="177.0" promptText="-NONE-" />
+            <TextArea fx:id="notes_box" layoutX="147.0" layoutY="231.0" prefHeight="58.0" prefWidth="425.0" promptText="-NONE-" />
+            <Label layoutX="278.0" layoutY="24.0" prefHeight="21.0" prefWidth="189.0" text="ADD PAYMENT" />
+            <Button fx:id="btnClose" layoutX="563.0" layoutY="335.0" mnemonicParsing="false" onAction="#onClickClose" text="Close" />
+            <Label layoutX="13.0" layoutY="59.0" prefHeight="21.0" prefWidth="135.0" text="PRODUCT/SERVICE:" />
+            <Button fx:id="btnAdd" layoutX="148.0" layoutY="296.0" mnemonicParsing="false" onAction="#onAddButtonClicked" text="ADD">
+               <effect>
+                  <Bloom />
+               </effect></Button>
+            <Button fx:id="btnClear" layoutX="245.0" layoutY="296.0" mnemonicParsing="false" onAction="#onClearButtonClicked" text="CLEAR" />
+            <Label layoutX="82.0" layoutY="105.0" prefHeight="21.0" prefWidth="69.0" text="AMOUNT:" />
+            <Label layoutX="95.0" layoutY="239.0" prefHeight="21.0" prefWidth="61.0" text="NOTES:" />
+            <Label layoutX="330.0" layoutY="105.0" prefHeight="21.0" prefWidth="90.0" text="DATE/TIME:" />
+            <Label layoutX="58.0" layoutY="194.0" prefHeight="21.0" prefWidth="90.0" text="INVOICE No.:" />
+      <Label layoutX="65.0" layoutY="148.0" prefHeight="21.0" prefWidth="84.0" text="CUSTOMER:" />
+         </children>
+    </AnchorPane>

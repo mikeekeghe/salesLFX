@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1002.0" xmlns="http://javafx.com/javafx/8" style="-fx-background-color: F6C88D;" stylesheets="@darktheme.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salesline.ExpLastMonthController">
+  <children>
+ 
+   
+            <Label layoutX="250.0" layoutY="14.0" text="LAST MONTH'S EXPENSE  REPORT" />
+            <Button fx:id="btnClose" layoutX="904.0" layoutY="328.0" mnemonicParsing="false" onAction="#onClickClose" text="Close" />
+            <Label layoutX="18.0" layoutY="301.0" text="Total for Last Month was :" />
+            <Label fx:id="lblTotal" layoutX="208.0" layoutY="301.0" prefHeight="17.0" prefWidth="74.0" text="Total" />
+            <TableView fx:id="tableExpenses" editable="true" layoutX="15.0" layoutY="64.0" prefHeight="228.0" prefWidth="973.0">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="nameCol" prefWidth="196.0" text="NAME" />
+                  <TableColumn fx:id="descriptionCol" minWidth="0.0" prefWidth="203.0" text="DESCRIPTION" />
+                  <TableColumn fx:id="amountCol" minWidth="0.0" prefWidth="153.0" text="AMOUNT" />
+                  <TableColumn fx:id="unitslCol" prefWidth="138.0" text="UNITS" />
+                  <TableColumn fx:id="dateCol" prefWidth="111.0" text="DATE" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnDownloadReport" layoutX="826.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClickDownloadReport" text="Download Report" />
+         </children>
+    </AnchorPane>
+

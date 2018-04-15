@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="555.0" prefWidth="798.0" style="-fx-background-color: F6C88D;" stylesheets="@darktheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salesline.AllExpenseItemsController">
+   <children>
+      <Label layoutX="310.0" layoutY="16.0" prefHeight="21.0" prefWidth="152.0" style="-: ;" text="ALL EXPENSE ITEMS">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClose" layoutX="679.0" layoutY="515.0" mnemonicParsing="false" onAction="#onClickClose" text="Close" />
+      <TableView fx:id="tableExpenses" editable="true" layoutX="11.0" layoutY="63.0" onMouseClicked="#onClickTable" prefHeight="228.0" prefWidth="749.0">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="nameCol" prefWidth="196.0" text="NAME" />
+            <TableColumn fx:id="descriptionCol" minWidth="0.0" prefWidth="181.0" text="DESCRIPTION" />
+            <TableColumn fx:id="amountCol" minWidth="0.0" prefWidth="171.0" text="AMOUNT" />
+            <TableColumn fx:id="dateCol" prefWidth="126.0" text="DATE" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnDownloadReport" layoutX="598.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickDownloadReport" text="Download Report" />
+      <AnchorPane layoutX="11.0" layoutY="303.0" prefHeight="212.0" prefWidth="749.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="16.0" layoutY="10.0" text="NAME" />
+            <TextField fx:id="name_box" disable="true" editable="false" layoutX="16.0" layoutY="38.0" prefHeight="37.0" prefWidth="189.0" />
+            <Button fx:id="btnUpdate" layoutX="433.0" layoutY="165.0" mnemonicParsing="false" onAction="#onClickUpdate" text="UPDATE" />
+            <Button fx:id="btnDelete" layoutX="556.0" layoutY="165.0" mnemonicParsing="false" onAction="#onClickDelete" text="DELETE" />
+            <Label layoutX="222.0" layoutY="10.0" text="AMOUNT" />
+            <TextField fx:id="amount_box" layoutX="222.0" layoutY="38.0" prefHeight="37.0" prefWidth="189.0" />
+            <Label layoutX="17.0" layoutY="91.0" text="DESCRIPTION" />
+            <TextField fx:id="description_box" layoutX="14.0" layoutY="119.0" prefHeight="37.0" prefWidth="189.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

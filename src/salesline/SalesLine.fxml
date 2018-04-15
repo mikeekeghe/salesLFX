@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="AnchorPane" prefHeight="630" prefWidth="1200" style="-fx-background-color: F6C88D;" stylesheets="@darktheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salesline.SalesLineController">
+    <children>
+   
+   <AnchorPane id="AnchorPane" prefHeight="630.0" prefWidth="1200" style="-fx-background-color: F6C88D;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1">
+    
+         <children>
+            <AnchorPane fx:id="navigationPane" layoutY="82.0" prefHeight="560.0" prefWidth="388.0" style="-fx-background-color: #1d1d1d;">
+               <children>
+                  <Button layoutX="19.0" layoutY="251.0" mnemonicParsing="false" styleClass="button-no-show" />
+                  <Label layoutX="179.0" layoutY="365.0" styleClass="label-left-nav" text="Income Reports" textAlignment="CENTER" textFill="#fff9f9" underline="true" />
+                  <Label layoutX="159.0" layoutY="473.0" styleClass="label-left-nav" text="Expenditure Reports" textFill="#fff9f9" underline="true" />
+                  <Button fx:id="btnIAddPayment" layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onAction="#onClickedAddPayment" styleClass="button-no-borders" text="ADD PAYMENT" />
+                  <Button fx:id="btnExpenditure" layoutX="3.0" layoutY="37.0" mnemonicParsing="false" onAction="#onClickedExpenditure" styleClass="button-no-borders" text="SPENT MONEY (Expenditure)" />
+                  <Button fx:id="btnAddNewIStudent" layoutX="3.0" layoutY="74.0" mnemonicParsing="false" onAction="#onClickedAddStudent" styleClass="button-no-borders" text="Register A Product/Service" />
+                  <Button fx:id="btnAddNewExpItem" layoutX="4.0" layoutY="115.0" mnemonicParsing="false" onAction="#onClickedAddExpItem" styleClass="button-no-borders" text="Add Expense Item" />
+                  <Button fx:id="btnThisWeek" layoutX="168.0" layoutY="390.0" mnemonicParsing="false" onAction="#onClickedThisWeekReport" styleClass="button-no-borders" text="This Week" />
+                  <Button fx:id="btnYesterday" layoutX="3.0" layoutY="427.0" mnemonicParsing="false" onAction="#onClickedYesterdayReport" styleClass="button-no-borders" text="Yesterday" />
+                  <Button fx:id="btnLastWeek" layoutX="168.0" layoutY="426.0" mnemonicParsing="false" onAction="#onClickedLastWeekReport" styleClass="button-no-borders" text="Last Week" />
+                  <Button fx:id="btnToday1" layoutX="24.0" layoutY="494.0" mnemonicParsing="false" onAction="#onClickTodayReportExp" styleClass="button-no-borders" text="Today" />
+                  <Button fx:id="btnYesterday1" layoutX="12.0" layoutY="527.0" mnemonicParsing="false" onAction="#onClickedYesterdayReportExp" styleClass="button-no-borders" text="Yesterday" />
+                  <Button fx:id="btnThisWeek1" layoutX="162.0" layoutY="493.0" mnemonicParsing="false" onAction="#onClickedThisWeekReportExp" styleClass="button-no-borders" text="This Week" />
+                  <Button fx:id="btnLastWeek1" layoutX="162.0" layoutY="526.0" mnemonicParsing="false" onAction="#onClickedLastWeekReportExp" styleClass="button-no-borders" text="Last Week" />
+                  <Button fx:id="btnThisMonth" layoutX="307.0" layoutY="390.0" mnemonicParsing="false" onAction="#onClickedThisMonthReport" styleClass="button-no-borders" text="This Month" />
+                  <Button fx:id="btnThisMonth1" layoutX="304.0" layoutY="493.0" mnemonicParsing="false" onAction="#onClickedThisMonthReportExp" styleClass="button-no-borders" text="This Month" />
+                  <Button fx:id="btnLastMonth1" layoutX="304.0" layoutY="526.0" mnemonicParsing="false" onAction="#onClickedLastMonthReportExp" styleClass="button-no-borders" text="Last Month" />
+                  <Button fx:id="btnLastMonth" layoutX="309.0" layoutY="426.0" mnemonicParsing="false" onAction="#onClickedLastMonthReport" styleClass="button-no-borders" text="Last Month" />
+                  <Button fx:id="btnToday" layoutX="27.0" layoutY="391.0" mnemonicParsing="false" onAction="#onClickTodayReport" styleClass="button-no-borders" text="Today" />
+                  <Button fx:id="btnAllCustomers" layoutX="3.0" layoutY="268.0" mnemonicParsing="false" onAction="#onClickedbtnAllCustomers" styleClass="button-no-borders" text="All Customers" />
+                  <Button fx:id="btnAllExpItems" layoutX="3.0" layoutY="313.0" mnemonicParsing="false" onAction="#onClickedbtnAllExpItems" styleClass="button-no-borders" text="All Expense Items" />
+                  <Button fx:id="btnAddNewCustomer" layoutX="4.0" layoutY="156.0" mnemonicParsing="false" onAction="#onClickedAddCustomer" styleClass="button-no-borders" text="Add A New Customer" />
+                  <Button fx:id="btnAllProducts" layoutX="3.0" layoutY="225.0" mnemonicParsing="false" onAction="#onClickedbtnAllProducts" styleClass="button-no-borders" text="All Products/Services" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="mainContentPane" layoutX="430.0" layoutY="82.0" prefHeight="560.0" prefWidth="777.0">
+               <children>
+                  <Label layoutX="376.0" layoutY="236.0" prefHeight="25.0" prefWidth="101.0" style="-fx-text-fill: black;" text="VERSION : 1.0" />
+                  <Label layoutX="158.0" layoutY="280.0" prefHeight="109.0" prefWidth="522.0" style="-fx-text-fill: black;" text="SalesLine Electronic Salesbook Solution eliminate paper-based processes in organizations, manage sales and expenditure information and allows administrators make well-informed decisions in management, thereby automating bookkeeping processes" textAlignment="CENTER" wrapText="true" />
+                  <Label layoutX="287.0" layoutY="186.0" prefHeight="25.0" prefWidth="265.0" style="-fx-text-fill: black;" text="ELECTRONIC SALESBOOK SOLUTION" />
+                  <Label layoutX="354.0" layoutY="143.0" prefHeight="43.0" prefWidth="143.0" style="-fx-text-fill: black; -fx-font-size: 22pt;" text="SalesLine" underline="true">
+                   
+                  </Label>
+                  <Label fx:id="copyRight" layoutX="319.0" layoutY="471.0" prefHeight="69.0" prefWidth="345.0" textAlignment="CENTER" wrapText="true" />
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="386.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-sales-performance-40.png" />
+                     </image>
+                  </ImageView>
+               
+               </children>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="6.0" prefHeight="43.0" prefWidth="154.0" style="-fx-text-fill: black; -fx-font-size: 22pt;" text="SalesLine" underline="true">
+          
+            </Label>
+            <Label layoutX="14.0" layoutY="49.0" prefHeight="25.0" prefWidth="188.0" style="-fx-text-fill: black;" styleClass="label-top-left" text="ELECTRONIC SALESBOOK SOLUTION">
+              
+            </Label>
+         </children>
+   </AnchorPane>
+   </children>
+</VBox>

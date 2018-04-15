@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: F6C88D;" stylesheets="@darktheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salesline.AddNewItemController">
+  <children>
+  
+            <Label layoutX="278.0" layoutY="14.0" text="ADD NEW ITEM" />
+            <Button fx:id="btnClose" layoutX="572.0" layoutY="336.0" mnemonicParsing="false" onAction="#onClickClose" text="Close" />
+            <Label layoutX="72.0" layoutY="56.0" text="NAME: " />
+            <Label layoutX="35.0" layoutY="91.0" text="DESCRIPTION:" />
+            <Label layoutX="40.0" layoutY="162.0" text="COST PRICE:" />
+            <Label layoutX="70.0" layoutY="240.0" text="UNITS" />
+            <TextField fx:id="item_name_box" layoutX="138.0" layoutY="52.0" prefHeight="25.0" prefWidth="425.0" />
+            <TextArea fx:id="item_desc_box" layoutX="138.0" layoutY="95.0" prefHeight="58.0" prefWidth="425.0" promptText="-optional-" />
+            <TextField fx:id="item_cost_box" layoutX="139.0" layoutY="158.0" />
+            <TextField fx:id="item_unit_box" layoutX="139.0" layoutY="242.0" text="1" />
+            <Button fx:id="btnAdd" layoutX="138.0" layoutY="284.0" mnemonicParsing="false" onAction="#onAddButtonClicked" text="ADD" />
+            <Button fx:id="btnClear" layoutX="235.0" layoutY="284.0" mnemonicParsing="false" onAction="#onClearButtonClicked" text="CLEAR" />
+            <TextField fx:id="item_quantity_box" layoutX="139.0" layoutY="200.0" />
+            <Label layoutX="45.0" layoutY="196.0" text="QUANTITY" />
+      
+  </children>
+</AnchorPane>
